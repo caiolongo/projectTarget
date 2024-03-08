@@ -1,0 +1,13 @@
+const number = 11;
+let fibonacci = [0,1];
+
+for (let i = 0; i < number; i++) {
+    let sum = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
+    fibonacci.push(sum);
+}
+
+if (fibonacci.includes(number)) {
+  console.log(`Número ${number} pertence a sequência de Fibonacci`);
+} else {
+  console.log(`Número ${number} não pertence a sequência de Fibonacci`);
+}
